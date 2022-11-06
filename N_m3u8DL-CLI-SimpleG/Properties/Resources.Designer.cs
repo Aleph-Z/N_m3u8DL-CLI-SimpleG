@@ -88,6 +88,15 @@ namespace N_m3u8DL_CLI_SimpleG.Properties {
         }
         
         /// <summary>
+        ///   查找类似 设置m3u8文件的Urlsuffix 的本地化字符串。
+        /// </summary>
+        public static string urlSuffix_Tip {
+            get {
+                return ResourceManager.GetString("urlSuffix_Tip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 使用二进制合并 的本地化字符串。
         /// </summary>
         public static string binaryMerge {

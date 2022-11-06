@@ -126,6 +126,9 @@
   <data name="baseUrl_Tip" xml:space="preserve">
     <value>Set the Baseurl of the m3u8 file</value>
   </data>
+  <data name="urlSuffix_Tip" xml:space="preserve">
+    <value>Set the Urlsuffix of the m3u8 file</value>
+  </data>
   <data name="binaryMerge" xml:space="preserve">
     <value>BinaryMerge</value>
   </data>

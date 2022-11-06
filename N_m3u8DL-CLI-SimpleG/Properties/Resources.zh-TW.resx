@@ -210,6 +210,9 @@
   <data name="baseUrl_Tip" xml:space="preserve">
     <value>設置m3u8文件的Baseurl</value>
   </data>
+  <data name="urlSuffix_Tip" xml:space="preserve">
+    <value>設置m3u8文件的Urlsuffix</value>
+  </data>
   <data name="headers" xml:space="preserve">
     <value>請求頭</value>
   </data>

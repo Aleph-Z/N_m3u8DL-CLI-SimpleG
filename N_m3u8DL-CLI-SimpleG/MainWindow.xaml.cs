@@ -144,6 +144,8 @@ namespace N_m3u8DL_CLI_SimpleG
                 sb.Append("--headers \"" + TextBox_Headers.Text + "\" ");
             if (!string.IsNullOrEmpty(TextBox_Baseurl.Text))
                 sb.Append("--baseUrl \"" + TextBox_Baseurl.Text + "\" ");
+            if (!string.IsNullOrEmpty(TextBox_Urlsuffix.Text))
+                sb.Append("--urlSuffix \"" + TextBox_Urlsuffix.Text + "\" ");
             if (!string.IsNullOrEmpty(TextBox_MuxJson.Text))
                 sb.Append("--muxSetJson \"" + TextBox_MuxJson.Text + "\" ");
             if (TextBox_Max.Text != "32")

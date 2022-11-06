@@ -126,6 +126,9 @@
   <data name="baseUrl_Tip" xml:space="preserve">
     <value>设置m3u8文件的Baseurl</value>
   </data>
+  <data name="urlSuffix_Tip" xml:space="preserve">
+    <value>设置m3u8文件的Urlsuffix</value>
+  </data>
   <data name="binaryMerge" xml:space="preserve">
     <value>使用二进制合并</value>
   </data>

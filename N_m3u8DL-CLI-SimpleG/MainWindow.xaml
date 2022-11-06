@@ -24,6 +24,7 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
             <RowDefinition Height="10"></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
@@ -101,10 +102,18 @@
                 <ColumnDefinition Width="70"></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" Margin="0,0,10,0" Width="70" Text="SUFFIX" VerticalAlignment="Center" Foreground="#FFF1F1F1"/>
+            <TextBox ToolTip="{x:Static props:Resources.urlSuffix_Tip}" TextChanged="TextChanged" Grid.Column="1" x:Name="TextBox_Urlsuffix" Padding="3" VerticalContentAlignment="Center" Background="#FF333337" Foreground="#FFF1F1F1" BorderBrush="#FF3F3F46"/>
+        </Grid>
+        <Grid Grid.Row="7" Margin="4" Grid.ColumnSpan="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="70"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
             <TextBlock Grid.Column="0" Margin="0,0,10,0" Width="70" Text="{x:Static props:Resources.muxJson}" VerticalAlignment="Center" Foreground="#FFF1F1F1"/>
             <TextBox ToolTip="{x:Static props:Resources.muxJson_Tip}" TextChanged="TextChanged" IsReadOnly="True" Background="#FF333337" Grid.Column="1" x:Name="TextBox_MuxJson" Padding="3" VerticalContentAlignment="Center" PreviewDragEnter="TextBox_MuxJson_PreviewDragEnter" PreviewDragOver="TextBox_MuxJson_PreviewDragOver" PreviewDrop="TextBox_MuxJson_PreviewDrop" BorderBrush="#FF3F3F46" Foreground="#FFF1F1F1"/>
         </Grid>
-        <Grid Grid.Row="7" Margin="4" Grid.ColumnSpan="3">
+        <Grid Grid.Row="8" Margin="4" Grid.ColumnSpan="3">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="70"></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
@@ -113,7 +122,7 @@
             <TextBox ToolTip="{x:Static props:Resources.key_Tip}" TextChanged="TextChanged" Grid.Column="1" x:Name="TextBox_Key" Padding="3" VerticalContentAlignment="Center" PreviewDragEnter="TextBox_Key_PreviewDragEnter" PreviewDragOver="TextBox_Key_PreviewDragOver" PreviewDrop="TextBox_Key_PreviewDrop" Background="#FF333337" BorderBrush="#FF3F3F46" Foreground="#FFF1F1F1"/>
 
         </Grid>
-        <Grid Grid.Row="8" Margin="4" Grid.ColumnSpan="3">
+        <Grid Grid.Row="9" Margin="4" Grid.ColumnSpan="3">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="70"></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
@@ -122,7 +131,7 @@
             <TextBox ToolTip="{x:Static props:Resources.iv_Tip}" TextChanged="TextChanged" Grid.Column="1" x:Name="TextBox_IV" Padding="3" VerticalContentAlignment="Center" PreviewDragEnter="TextBox_Key_PreviewDragEnter" PreviewDragOver="TextBox_Key_PreviewDragOver" PreviewDrop="TextBox_Key_PreviewDrop" Background="#FF333337" BorderBrush="#FF3F3F46" Foreground="#FFF1F1F1"/>
 
         </Grid>
-        <Grid Grid.Row="9" Margin="4" Grid.ColumnSpan="3">
+        <Grid Grid.Row="10" Margin="4" Grid.ColumnSpan="3">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="70"></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
@@ -131,7 +140,7 @@
             <TextBox ToolTip="{x:Static props:Resources.setProxy_Tip}" TextChanged="TextChanged" Grid.Column="1" x:Name="TextBox_Proxy" Padding="3" VerticalContentAlignment="Center" PreviewDragEnter="TextBox_Key_PreviewDragEnter" PreviewDragOver="TextBox_Key_PreviewDragOver" PreviewDrop="TextBox_Key_PreviewDrop" Background="#FF333337" BorderBrush="#FF3F3F46" Foreground="#FFF1F1F1"/>
 
         </Grid>
-        <Grid Grid.Row="11" Margin="4" Grid.ColumnSpan="3">
+        <Grid Grid.Row="12" Margin="4" Grid.ColumnSpan="3">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="70"></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
@@ -148,7 +157,7 @@
                 <TextBox ToolTip="{x:Static props:Resources.range_Tip2}" Text="00:00:00" TextChanged="TextChanged" Grid.Column="2" x:Name="TextBox_RangeEnd" Padding="3" VerticalContentAlignment="Center" Background="#FF333337" Foreground="#FFF1F1F1" BorderBrush="#FF3F3F46"/>
             </Grid>
         </Grid>
-        <Grid Grid.Row="12" Margin="4,0" VerticalAlignment="Center" Grid.ColumnSpan="3">
+        <Grid Grid.Row="13" Margin="4,0" VerticalAlignment="Center" Grid.ColumnSpan="3">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
@@ -158,7 +167,7 @@
             <CheckBox ToolTip="{x:Static props:Resources.disableDate_Tip}" Checked="CheckBoxChanged" Unchecked="CheckBoxChanged" HorizontalAlignment="Left" Cursor="Hand" x:Name="CheckBox_DisableDate" Grid.Column="1" Content="{x:Static props:Resources.disableDate}" Foreground="#FFF1F1F1"/>
             <CheckBox ToolTip="{x:Static props:Resources.disableProxy_Tip}" Checked="CheckBoxChanged" Unchecked="CheckBoxChanged" HorizontalAlignment="Left" Cursor="Hand" x:Name="CheckBox_DisableProxy" Grid.Column="2" Content="{x:Static props:Resources.disableProxy}" Foreground="#FFF1F1F1"/>
         </Grid>
-        <Grid Grid.Row="13" Margin="4,0" VerticalAlignment="Center" Grid.ColumnSpan="3">
+        <Grid Grid.Row="14" Margin="4,0" VerticalAlignment="Center" Grid.ColumnSpan="3">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
@@ -168,7 +177,7 @@
             <CheckBox ToolTip="{x:Static props:Resources.fastStart_Tip}" Checked="CheckBoxChanged" Unchecked="CheckBoxChanged" HorizontalAlignment="Left" Cursor="Hand" x:Name="CheckBox_FastStart" Grid.Column="1" Content="{x:Static props:Resources.fastStart}" Foreground="#FFF1F1F1"/>
             <CheckBox ToolTip="{x:Static props:Resources.binaryMerge_Tip}" Checked="CheckBoxChanged" Unchecked="CheckBoxChanged" HorizontalAlignment="Left" Cursor="Hand" x:Name="CheckBox_DisableMerge" Grid.Column="2" Content="{x:Static props:Resources.disableMerge}" Foreground="#FFF1F1F1"/>
         </Grid>
-        <Grid Grid.Row="14" Margin="4,0" VerticalAlignment="Center" Grid.ColumnSpan="3">
+        <Grid Grid.Row="15" Margin="4,0" VerticalAlignment="Center" Grid.ColumnSpan="3">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
@@ -178,7 +187,7 @@
             <CheckBox ToolTip="{x:Static props:Resources.binaryMerge_Tip}" Checked="CheckBoxChanged" Unchecked="CheckBoxChanged" HorizontalAlignment="Left" Cursor="Hand" x:Name="CheckBox_BinaryMerge" Grid.Column="0" Content="{x:Static props:Resources.binaryMerge}" Foreground="#FFF1F1F1"/>
             <CheckBox ToolTip="{x:Static props:Resources.disableCheck_Tip}" Checked="CheckBoxChanged" Unchecked="CheckBoxChanged" HorizontalAlignment="Left" Cursor="Hand" x:Name="CheckBox_DisableCheck" Grid.Column="2" Content="{x:Static props:Resources.disableCheck}" Foreground="#FFF1F1F1"/>
         </Grid>
-        <Grid Grid.Row="15" Margin="4" Grid.ColumnSpan="3">
+        <Grid Grid.Row="16" Margin="4" Grid.ColumnSpan="3">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
@@ -209,7 +218,7 @@
                 <TextBox ToolTip="{x:Static props:Resources.retryCount_Tip}" x:Name="TextBox_Retry" TextChanged="TextChanged" Grid.Column="1" Text="15" Margin="0" HorizontalContentAlignment="Center" VerticalAlignment="Center" Foreground="#FFF1F1F1" Background="#FF333337" BorderBrush="#FF3F3F46"/>
             </Grid>
         </Grid>
-        <Grid Grid.Row="16" Margin="4" Grid.ColumnSpan="3">
+        <Grid Grid.Row="17" Margin="4" Grid.ColumnSpan="3">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
@@ -240,7 +249,7 @@
                 <TextBox ToolTip="{x:Static props:Resources.maxSpeed_Tip}" x:Name="TextBox_MaxSpeed" TextChanged="TextChanged" Grid.Column="1" Text="0" Margin="0" HorizontalContentAlignment="Center" VerticalAlignment="Center" Foreground="#FFF1F1F1" Background="#FF333337" BorderBrush="#FF3F3F46"/>
             </Grid>
         </Grid>
-        <Grid Grid.Row="17" Margin="4" Grid.ColumnSpan="3">
+        <Grid Grid.Row="18" Margin="4" Grid.ColumnSpan="3">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="70"></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
