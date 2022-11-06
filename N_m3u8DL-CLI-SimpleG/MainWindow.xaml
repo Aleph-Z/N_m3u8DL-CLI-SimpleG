@@ -175,7 +175,7 @@
             </Grid.ColumnDefinitions>
             <CheckBox ToolTip="{x:Static props:Resources.parseOnly_Tip}" Checked="CheckBoxChanged" Unchecked="CheckBoxChanged" HorizontalAlignment="Left" Cursor="Hand" x:Name="CheckBox_ParserOnly" Grid.Column="0" Content="{x:Static props:Resources.parseOnly}" Foreground="#FFF1F1F1"/>
             <CheckBox ToolTip="{x:Static props:Resources.fastStart_Tip}" Checked="CheckBoxChanged" Unchecked="CheckBoxChanged" HorizontalAlignment="Left" Cursor="Hand" x:Name="CheckBox_FastStart" Grid.Column="1" Content="{x:Static props:Resources.fastStart}" Foreground="#FFF1F1F1"/>
-            <CheckBox ToolTip="{x:Static props:Resources.binaryMerge_Tip}" Checked="CheckBoxChanged" Unchecked="CheckBoxChanged" HorizontalAlignment="Left" Cursor="Hand" x:Name="CheckBox_DisableMerge" Grid.Column="2" Content="{x:Static props:Resources.disableMerge}" Foreground="#FFF1F1F1"/>
+            <CheckBox ToolTip="{x:Static props:Resources.disableMerge_Tip}" Checked="CheckBoxChanged" Unchecked="CheckBoxChanged" HorizontalAlignment="Left" Cursor="Hand" x:Name="CheckBox_DisableMerge" Grid.Column="2" Content="{x:Static props:Resources.disableMerge}" Foreground="#FFF1F1F1"/>
         </Grid>
         <Grid Grid.Row="15" Margin="4,0" VerticalAlignment="Center" Grid.ColumnSpan="3">
             <Grid.ColumnDefinitions>
